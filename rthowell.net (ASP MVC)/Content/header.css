@@ -1,0 +1,12 @@
+﻿#arHeaderImage
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 200px;
+}
+.menu
+{
+    position: fixed;
+    top: 200px;
+}

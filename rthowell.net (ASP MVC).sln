@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rthowell.net (ASP MVC)", "rthowell.net (ASP MVC)\rthowell.net (ASP MVC).csproj", "{70FBF357-386F-4009-B460-63E05721F24B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rthowell.net (ASP MVC).Tests", "rthowell.net (ASP MVC).Tests\rthowell.net (ASP MVC).Tests.csproj", "{D10A752D-A4BE-4F02-BFC5-8075913501DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70FBF357-386F-4009-B460-63E05721F24B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70FBF357-386F-4009-B460-63E05721F24B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70FBF357-386F-4009-B460-63E05721F24B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70FBF357-386F-4009-B460-63E05721F24B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10A752D-A4BE-4F02-BFC5-8075913501DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10A752D-A4BE-4F02-BFC5-8075913501DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10A752D-A4BE-4F02-BFC5-8075913501DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10A752D-A4BE-4F02-BFC5-8075913501DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

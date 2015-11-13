@@ -1,0 +1,45 @@
+﻿
+@section Styles
+{
+    <link href="@Url.Content("~/Content/cssmenu.css")" rel="stylesheet" type="text/css" />
+}
+
+
+
+<div class="menu">
+    <ul>
+        <li>
+            <a href="default.aspx"><img src="~/img/nav/home.png" alt="[home]" title="" /></a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="~/img/nav/experience.png" alt="[work experience]" title="" />
+            <ul class="leftbutton">
+                <li><a href="work/resume.aspx">My Resume</a></li>
+                <li><a href="work/electronics.aspx">Electronics</a></li>
+                <li><a href="work/software.aspx">Software</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="~/img/nav/hobbies.png" alt="[hobbies]" title="" />
+            <ul class="leftbutton">
+                <li><a href="hobbies/photography.aspx">Photography</a></li>
+                <li><a href="hobbies/games.aspx">Games</a></li>
+                <!--<li><a href="hobbies/firearms.aspx">Firearms</a></li>-->
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            @ViewBag.PageTitle
+        </li>
+    </ul>
+    <ul style="float:right">
+        <li>
+            <a href="contact.aspx"><img src="~/img/nav/contact.png" alt="[contact]" title="" /></a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <!-- The URL for the image -->
+    <ImageUrl>~/img/header/header-001.jpg</ImageUrl>
+    <!-- The alternate text for the image -->
+    <AlternateText>Web header image</AlternateText>
+    <!-- How much more often the image should appear over others -->
+    <Impressions>1</Impressions>   
+  </Ad>
+  <Ad>
+    <ImageUrl>~/img/header/header-002.jpg</ImageUrl>
+    <AlternateText>Web header image</AlternateText>
+    <Impressions>1</Impressions>   
+  </Ad>
+  <Ad>
+    <ImageUrl>~/img/header/header-003.jpg</ImageUrl>
+    <AlternateText>Web header image</AlternateText>
+    <Impressions>1</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/img/header/header-004.jpg</ImageUrl>
+    <AlternateText>Web header image</AlternateText>
+    <Impressions>1</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/img/header/header-005.jpg</ImageUrl>
+    <AlternateText>Web header image</AlternateText>
+    <Impressions>1</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/img/header/header-006.jpg</ImageUrl>
+    <AlternateText>Web header image</AlternateText>
+    <Impressions>1</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/img/header/header-007.jpg</ImageUrl>
+    <AlternateText>Web header image</AlternateText>
+    <Impressions>1</Impressions>
+  </Ad>
+</Advertisements>

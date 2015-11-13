@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="~/Content/cssmenu.css" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("Styles", false)
+    <meta name="description" content="My personal web site to show off my skills." />
+    
+</head>
+<body>
+
+    <div id="banner-load"></div>
+
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="default.aspx"><img src="~/img/nav/home.png" alt="[home]" title="" /></a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="~/img/nav/experience.png" alt="[work experience]" title="" />
+                <ul class="leftbutton">
+                    <li><a href="work/resume.aspx">My Resume</a></li>
+                    <li><a href="work/electronics.aspx">Electronics</a></li>
+                    <li><a href="work/software.aspx">Software</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="~/img/nav/hobbies.png" alt="[hobbies]" title="" />
+                <ul class="leftbutton">
+                    <li><a href="hobbies/photography.aspx">Photography</a></li>
+                    <li><a href="hobbies/games.aspx">Games</a></li>
+                    <!--<li><a href="hobbies/firearms.aspx">Firearms</a></li>-->
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                @ViewBag.PageTitle
+            </li>
+        </ul>
+        <ul style="float:right">
+            <li>
+                <a href="contact.aspx"><img src="~/img/nav/contact.png" alt="[contact]" title="" /></a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Richard Thomas Howell</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <script>
+        var images = ['header-001.jpg', 'header-002.jpg', 'header-003.jpg', 'header-004.jpg', 'header-005.jpg', 'header-006.jpg', 'header-007.jpg']
+
+    $('<img style="width: 100%; height: 200px;" src="img/header/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+    </script>
+
+</body>
+</html>
