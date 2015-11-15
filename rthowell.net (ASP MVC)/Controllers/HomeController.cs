@@ -10,20 +10,8 @@ namespace rthowell.net__ASP_MVC_.Controllers
     {
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
+            ViewBag.Title = "Home Page";
+            ViewBag.PageTitle = "Home";
             return View();
         }
     }
