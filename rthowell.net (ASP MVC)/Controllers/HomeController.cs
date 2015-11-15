@@ -14,5 +14,19 @@ namespace rthowell.net__ASP_MVC_.Controllers
             ViewBag.PageTitle = "Home";
             return View();
         }
+
+        public ActionResult Resume()
+        {
+            ViewBag.Title = "Richard's Resume";
+            ViewBag.PageTitle = "Current Resume";
+            return View();
+        }
+
+        public ActionResult Photography()
+        {
+            ViewBag.Title = "Photography";
+            ViewBag.PageTitle = "Photos From the Northwest";
+            return View();
+        }
     }
 }

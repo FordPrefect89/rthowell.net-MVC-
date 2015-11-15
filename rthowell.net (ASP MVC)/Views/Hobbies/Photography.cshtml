@@ -1,0 +1,163 @@
+﻿
+@{
+    ViewBag.Title = "Photography";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles
+{
+    <link href="@Url.Content("~/Content/main.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/photography.css")" rel="stylesheet" type="text/css" />
+}
+
+
+<div id="galleryDiv">
+    
+        <p>Click galllery names below</p>
+        <p class="jslink" id="mf"><a href="#molalla">Molalla River</a></p>
+        <p class="jslink" id="oc"><a href="#coast">Oregon Coast</a></p>
+    
+        <div class="gallery">
+            <img src="img/backgrounds/montage.jpg" alt="Random photos from my excersions." />
+        </div>
+</div>
+
+
+<div id="molalla">
+    <table id="MolallaRiver">
+        <tr>
+            <th colspan="5">Molalla River Recreation Area</th>
+        </tr>
+        <tr>
+            <td id="moalla01"><img src="img/MolallaThumbs/molalla001.jpg" alt="Moalla River" /></td>
+            <td id="moalla02"><img src="img/MolallaThumbs/molalla002.jpg" alt="Moalla River" /></td>
+            <td id="moalla03"><img src="img/MolallaThumbs/molalla003.jpg" alt="Moalla River" /></td>
+            <td id="moalla04"><img src="img/MolallaThumbs/molalla004.jpg" alt="Moalla River" /></td>
+            <td id="moalla05"><img src="img/MolallaThumbs/molalla005.jpg" alt="Moalla River" /></td>
+        </tr>
+    </table>
+</div>
+
+<div id="coast">
+    <table id="OregonCoast">
+        <tr>
+            <th colspan="5">Oregon Coast</th>
+        </tr>
+        <tr>
+            <td id="coast01"><img src="img/CoastThumbs/coast001.jpg" alt="Oregon Coast" /></td>
+            <td id="coast02"><img src="img/CoastThumbs/coast002.jpg" alt="Oregon Coast" /></td>
+            <td id="coast03"><img src="img/CoastThumbs/coast003.jpg" alt="Oregon Coast" /></td>
+            <td id="coast04"><img src="img/CoastThumbs/coast004.jpg" alt="Oregon Coast" /></td>
+            <td id="coast05"><img src="img/CoastThumbs/coast005.jpg" alt="Oregon Coast" /></td>
+        </tr>
+    </table>
+</div>
+
+
+<div id="m001">
+    <img src="img/molalla/molalla001.jpg" alt="Moalla State Forest" />
+</div>
+<div id="m002">
+    <img src="img/molalla/molalla002.jpg" alt="Moalla State Forest" />
+</div>
+<div id="m003">
+    <img src="img/molalla/molalla003.jpg" alt="Moalla State Forest" />
+</div>
+<div id="m004">
+    <img src="img/molalla/molalla004.jpg" alt="Moalla State Forest" />
+</div>
+<div id="m005">
+    <img src="img/molalla/molalla005.jpg" alt="Moalla State Forest" />
+</div>
+
+<div id="c001">
+    <img src="img/coast/coast001.jpg" alt="Oregon State Coast" />
+</div>
+<div id="c002">
+    <img src="img/coast/coast002.jpg" alt="Oregon State Coast" />
+</div>
+<div id="c003">
+    <img src="img/coast/coast003.jpg" alt="Oregon State Coast" />
+</div>
+<div id="c004">
+    <img src="img/coast/coast004.jpg" alt="Oregon State Coast" />
+</div>
+<div id="c005">
+    <img src="img/coast/coast005.jpg" alt="Oregon State Coast" />
+</div>
+
+<script>
+    var landscapeOptions = {
+        autoOpen: false,
+        show: { effect: 'slide', duration: 500 },
+        hide: { effect: 'slide', duration: 500 },
+        width: 680,
+        height: 500,
+        modal: true
+    };
+    var portrateOptions = {
+        autoOpen: false,
+        show: { effect: 'slide', duration: 500 },
+        hide: { effect: 'slide', duration: 500 },
+        width: 355,
+        height: 560,
+        modal: true
+    };
+    $(document).ready(function () {
+        $('a').click(function () {
+            var linkID = $(this).attr('href');
+            var elem = $('' + linkID).html();
+            $('#pnlGallery').html(elem);
+        });
+        $(document).on('click', '#moalla01', function (e) {
+            $('#m001').dialog(landscapeOptions, { title: "Stream near the Moalla River" });
+            $('#m001').dialog('open');
+            return false;
+        });
+        $(document).on('click', '#moalla02', function (e) {
+            $('#m002').dialog(landscapeOptions, { title: "Moalla River" });
+            $('#m002').dialog('open');
+            return false;
+        });
+        $(document).on('click', '#moalla03', function (e) {
+            $('#m003').dialog(landscapeOptions, { title: "Moalla River" });
+            $('#m003').dialog('open');
+            return false;
+        });
+        $(document).on('click', '#moalla04', function (e) {
+            $('#m004').dialog(landscapeOptions, { title: "Moalla River" });
+            $('#m004').dialog('open');
+            return false;
+        });
+        $(document).on('click', '#moalla05', function (e) {
+            $('#m005').dialog(landscapeOptions, { title: "Moalla River" });
+            $('#m005').dialog('open');
+            return false;
+        });
+        $(document).on('click', '#coast01', function (e) {
+            $('#c001').dialog(portrateOptions, { title: "Newport Lighthouse" });
+            $('#c001').dialog('open');
+            return false;
+        });
+        $(document).on('click', '#coast02', function (e) {
+            $('#c002').dialog(landscapeOptions, { title: "Oregon Coast near Newport" });
+            $('#c002').dialog('open');
+            return false;
+        });
+        $(document).on('click', '#coast03', function (e) {
+            $('#c003').dialog(portrateOptions, { title: "Oregon Coast near Newport" });
+            $('#c003').dialog('open');
+            return false;
+        });
+        $(document).on('click', '#coast04', function (e) {
+            $('#c004').dialog(landscapeOptions, { title: "Oregon Coast near Newport" });
+            $('#c004').dialog('open');
+            return false;
+        });
+        $(document).on('click', '#coast05', function (e) {
+            $('#c005').dialog(landscapeOptions, { title: "Oregon Coast near Newport" });
+            $('#c005').dialog('open');
+            return false;
+        });
+    });
+</script>
