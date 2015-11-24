@@ -174,6 +174,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\DbConnectionContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -181,12 +182,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\headers.xml" />
+    <Content Include="Content\bootstrap-image-gallery.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\cssmenu.css" />
     <Content Include="Content\header.css" />
     <Content Include="Content\main.css" />
     <Content Include="Content\photography.css" />
+    <Content Include="Content\scripts\bootstrap-image-gallery.min.js" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -255,6 +258,26 @@
     <Content Include="img\nav\hobbies.png" />
     <Content Include="img\nav\home.png" />
     <Content Include="img\paper.jpg" />
+    <Content Include="img\photography\coast001.jpg" />
+    <Content Include="img\photography\coast002.jpg" />
+    <Content Include="img\photography\coast003.jpg" />
+    <Content Include="img\photography\coast004.jpg" />
+    <Content Include="img\photography\coast005.jpg" />
+    <Content Include="img\photography\molalla001.jpg" />
+    <Content Include="img\photography\molalla002.jpg" />
+    <Content Include="img\photography\molalla003.jpg" />
+    <Content Include="img\photography\molalla004.jpg" />
+    <Content Include="img\photography\molalla005.jpg" />
+    <Content Include="img\photography\thumbs\coast001.jpg" />
+    <Content Include="img\photography\thumbs\coast002.jpg" />
+    <Content Include="img\photography\thumbs\coast003.jpg" />
+    <Content Include="img\photography\thumbs\coast004.jpg" />
+    <Content Include="img\photography\thumbs\coast005.jpg" />
+    <Content Include="img\photography\thumbs\molalla001.jpg" />
+    <Content Include="img\photography\thumbs\molalla002.jpg" />
+    <Content Include="img\photography\thumbs\molalla003.jpg" />
+    <Content Include="img\photography\thumbs\molalla004.jpg" />
+    <Content Include="img\photography\thumbs\molalla005.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="img\header\Thumbs.db" />
@@ -268,6 +291,8 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.min.js" />
+    <Content Include="Scripts\jquery.mousewheel.js" />
+    <Content Include="Scripts\jquery.mousewheel.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -276,7 +301,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -294,6 +321,7 @@
     <Content Include="Views\Home\Resume.cshtml" />
     <Content Include="Views\Home\Photography.cshtml" />
     <Content Include="Views\Hobbies\Photography.cshtml" />
+    <Content Include="Views\Hobbies\Games.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
