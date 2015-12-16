@@ -1,52 +1,7 @@
-﻿table
+﻿#photoNav
 {
-    border-collapse: collapse;
-    border-radius: 25px;
-}
-table, th, td
-{
-    padding: 5px;
-    margin: 5px auto 5px auto;
-    border: 1px solid black;
-}
-th, td img
-{
-    text-align: center;
-    color: black;
-}
-.gallerylink
-{
-    width: 125px;
-    float: left;
-    margin: 10px 0 0 10px;
-    border-color: #CCCC7A;
-    padding: 3px;
-    border-radius: 5px;
-    position: fixed;
-    top: 220px;
-}
-.gallery
-{
-    width: 85%;
-    height: 100%;
-    float: right;
-    margin: 10px 10px 0 0;
-    background-color: #99FFCC;
-    border-color: #CCCC7A;
-    border-radius: 5px;
-}
-p
-{
-    color: black;
-    font-size: small;
-}
-.jslink:hover
-{
-    background-color: #CCCC7A;
-    width: 85%;
-    cursor: pointer;
-}
-#molalla, #m001, #m002, #m003, #m004, #m005, #coast, #c001, #c002, #c003, #c004, #c005
-{
-    display: none;
+    margin: 5px 0;
+    border: 5px inset #000;
+    border-radius: 10px;
+    width: auto;
 }

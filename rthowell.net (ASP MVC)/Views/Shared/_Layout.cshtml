@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Richard Thomas Howell - rthowell.net</title>
-    <link rel="stylesheet" href="~/Content/cssmenu.css" />
+    <!--<link rel="stylesheet" href="~/Content/cssmenu.css" />-->
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @RenderSection("Styles", false)
@@ -15,44 +15,100 @@
 
     <div id="banner-load"></div>
 
-    <div class="menu">
-        <ul>
-            <li>
-                <a href="~/Home"><img src="~/img/nav/home.png" alt="[home]" title="" /></a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <img src="~/img/nav/experience.png" alt="[work experience]" title="" />
-                <ul class="leftbutton">
-                    <li><a href="~/Home/Resume">My Resume</a></li>
-                    <li><a href="~/Electronics">Electronics</a></li>
-                    <li><a href="~/Software">Software</a></li>
-                </ul>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <img src="~/img/nav/hobbies.png" alt="[hobbies]" title="" />
-                <ul class="leftbutton">
-                    <li><a href="~/Hobbies/Photography">Photography</a></li>
-                    <li><a href="~/Hobbies/Games">Games</a></li>
-                    <!--<li><a href="~/Hobbies/Firearms.aspx">Firearms</a></li>-->
-                </ul>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                @ViewBag.PageTitle
-            </li>
-        </ul>
-        <ul style="float:right">
-            <li>
-                <a href="~/Contact"><img src="~/img/nav/contact.png" alt="[contact]" title="" /></a>
-            </li>
-        </ul>
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">@Html.ActionLink("Home", "../Home/Index")</li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Work Experience<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("My Resume", "../Home/Resume")</li>
+                                <li>@Html.ActionLink("Electronics", "../Home/Electronics")</li>
+                                <li>@Html.ActionLink("Software", "../Home/Software")</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hobbies<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Photography", "../Hobbies/Photography")</li>
+                                <li>@Html.ActionLink("Games", "../Hobbies/Games")</li>
+                                <li>@Html.ActionLink("Outdoors", "../Hobbies/Outdoors")</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="navbar-brand">@ViewBag.PageTitle</div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>@Html.ActionLink("Contact", "../Home/Contact")</li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
     </div>
-    
+    <!--
+    <div class="menu">
+        <div class="row">
+            <div class="col-md-1">
+                <ul>
+                    <li>
+                        <a href="~/Home"><img src="~/img/nav/home.png" alt="[home]" title="" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-1">
+                <ul>
+                    <li>
+                        <img src="~/img/nav/experience.png" alt="[work experience]" title="" />
+                        <ul class="leftbutton">
+                            <li><a href="~/Home/Resume">My Resume</a></li>
+                            <li><a href="~/Electronics">Electronics</a></li>
+                            <li><a href="~/Software">Software</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-1">
+                <ul>
+                    <li>
+                        <img src="~/img/nav/hobbies.png" alt="[hobbies]" title="" />
+                        <ul class="leftbutton">
+                            <li><a href="~/Hobbies/Photography">Photography</a></li>
+                            <li><a href="~/Hobbies/Games">Games</a></li>
+                            <li><a href="~/Hobbies/Firearms.aspx">Firearms</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li>
+                        @ViewBag.PageTitle
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-1">
+                <ul>
+                    <li>
+                        <a href="~/Contact"><img src="~/img/nav/contact.png" alt="[contact]" title="" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    -->
     <div class="container body-content">
         @RenderBody()
         
