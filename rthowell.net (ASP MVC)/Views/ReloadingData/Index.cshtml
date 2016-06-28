@@ -1,0 +1,84 @@
+﻿@model IEnumerable<rthowell.net__ASP_MVC_.Models.ReloadingData>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Ammunition Reloading Ledger</h2>
+
+<p>
+    @using (Html.BeginForm("Index", "ReloadingData", FormMethod.Get))
+    {
+        <text>Select Cartridge </text>@Html.DropDownList("Cartridge", new SelectList(ViewBag.Cartridge));
+        <input type="submit" value="Search" />
+    }
+</p>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Cartridge
+        </th>
+        <th>
+            Bullet Brand
+        </th>
+        <th>
+            Bullet Type
+        </th>
+        <th>
+            Bullet Weight
+        </th>
+        <th>
+            Powder
+        </th>
+        <th>
+            Powder Weight
+        </th>
+        <th>
+            Primer Brand
+        </th>
+        <th>
+            PrimerType
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cartridge)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BulletBrand)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BulletType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BulletWeight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Powder)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PowderWeight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrimerBrand)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrimerType)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

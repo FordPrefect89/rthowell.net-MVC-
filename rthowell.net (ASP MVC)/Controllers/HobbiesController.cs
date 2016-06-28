@@ -27,5 +27,10 @@ namespace rthowell.net__ASP_MVC_.Controllers
             ViewBag.PageTitle = "Computer and video games I play";
             return View();
         }
+
+        public ActionResult coast()
+        {
+            return View();
+        }
     }
 }

@@ -42,6 +42,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -170,13 +172,23 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HobbiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReloadingController.cs" />
+    <Compile Include="Controllers\ReloadingDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BulletInfo.cs" />
     <Compile Include="Models\DbConnectionContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Ledger.cs" />
+    <Compile Include="Models\LedgerDBContext.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PowderManufacturers.cs" />
+    <Compile Include="Models\PrimerManufacturers.cs" />
+    <Compile Include="Models\ReloadingData.cs" />
+    <Compile Include="Models\ReloadingLedger.cs" />
+    <Compile Include="Models\ReloadingLedgerDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -284,6 +296,7 @@
     <Content Include="img\nav\Thumbs.db" />
     <Content Include="img\templates\Header Template.psd" />
     <Content Include="img\jquery\Thumbs.db" />
+    <None Include="Properties\PublishProfiles\rthowell.net.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
@@ -301,6 +314,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="SQLQuery.sql" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -322,6 +336,13 @@
     <Content Include="Views\Home\Photography.cshtml" />
     <Content Include="Views\Hobbies\Photography.cshtml" />
     <Content Include="Views\Hobbies\Games.cshtml" />
+    <Content Include="Views\Hobbies\coast.cshtml" />
+    <Content Include="Views\Reloading\Index.cshtml" />
+    <Content Include="Views\ReloadingData\Create.cshtml" />
+    <Content Include="Views\ReloadingData\Delete.cshtml" />
+    <Content Include="Views\ReloadingData\Details.cshtml" />
+    <Content Include="Views\ReloadingData\Edit.cshtml" />
+    <Content Include="Views\ReloadingData\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

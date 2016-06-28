@@ -1,0 +1,139 @@
+﻿@model rthowell.net__ASP_MVC_.Models.ReloadingData
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ReloadingData</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cartridge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cartridge)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLoaded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateLoaded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoadSource)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoadSource)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BulletBrand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BulletBrand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BulletType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BulletType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BulletWeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BulletWeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Powder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Powder)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PowderWeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PowderWeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PowderLot)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PowderLot)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimerBrand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrimerBrand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimerType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrimerType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimerLot)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrimerLot)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Speed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Speed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

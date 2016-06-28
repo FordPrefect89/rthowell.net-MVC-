@@ -1,0 +1,118 @@
+﻿@model IEnumerable<rthowell.net__ASP_MVC_.Models.ReloadingLedger>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Cartridge Reloading Ledger</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cartridge)
+        </th>
+        <th>
+            Date Loaded
+        </th>
+        <th>
+            Load Data Source
+        </th>
+        <th>
+            Bullet Brand
+        </th>
+        <th>
+            Bullet Type
+        </th>
+        <th>
+            Weight (grains)
+        </th>
+        <th>
+            Powder Name
+        </th>
+        <th>
+            Weight (grains)
+        </th>
+        <th>
+            Powder Lot
+        </th>
+        <th>
+            Primer Brand
+        </th>
+        <th>
+            Type
+        </th>
+        <th>
+            Primer Lot
+        </th>
+        <th>
+            COL (inches)
+        </th>
+        <th>
+            Speed (Avg FPS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cartridge)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateLoaded)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoadSource)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BulletBrand)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BulletType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BulletWeight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Powder)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PowderWeight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PowderLot)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrimerBrand)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrimerType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrimerLot)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Speed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Notes)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "coast";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>coast</h2>
+
+
+<div class="col-md-11 col-xs-11">
+    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <!-- The container for the modal slides -->
+        <div class="slides"></div>
+        <!-- Controls for the borderless lightbox -->
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body next"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="btn btn-primary next">
+                            Next
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="links">
+    <a href="~/img/photography/coast001.jpg" title="Oregon Coast 1" data-gallery>
+        <img src="~/img/photography/thumbs/coast001.jpg" alt="Oregon Coast">
+    </a>
+    <a href="~/img/photography/coast002.jpg" title="Oregon Coast 2" data-gallery>
+        <img src="~/img/photography/thumbs/coast002.jpg" alt="Oregon Coast">
+    </a>
+    <a href="~/img/photography/coast003.jpg" title="Oregon Coast 3" data-gallery>
+        <img src="~/img/photography/thumbs/coast003.jpg" alt="Oregon Coast">
+    </a>
+    <a href="~/img/photography/coast004.jpg" title="Oregon Coast 4" data-gallery>
+        <img src="~/img/photography/thumbs/coast004.jpg" alt="Oregon Coast">
+    </a>
+    <a href="~/img/photography/coast005.jpg" title="Oregon Coast 5" data-gallery>
+        <img src="~/img/photography/thumbs/coast005.jpg" alt="Oregon Coast">
+    </a>
+</div>
