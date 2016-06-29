@@ -20,6 +20,7 @@ namespace rthowell.net__ASP_MVC_.Controllers
             ViewBag.Cartridge = (from c in db.ReloadingData select c.Cartridge).Distinct();
 
             var model = from r in db.ReloadingData
+                        orderby r.DateLoaded
                         where r.Cartridge == cartridge || cartridge == null || cartridge == ""
                         select r;
 

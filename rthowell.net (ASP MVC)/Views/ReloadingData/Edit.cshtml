@@ -18,7 +18,9 @@
         @Html.HiddenFor(model => model.Id)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Cartridge, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Cartridge</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Cartridge, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Cartridge, "", new { @class = "text-danger" })
@@ -26,7 +28,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.DateLoaded, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Date Loaded</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.DateLoaded, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.DateLoaded, "", new { @class = "text-danger" })
@@ -34,7 +38,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.LoadSource, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Load Source</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.LoadSource, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.LoadSource, "", new { @class = "text-danger" })
@@ -42,7 +48,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.BulletBrand, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Bullet Brand</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.BulletBrand, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.BulletBrand, "", new { @class = "text-danger" })
@@ -50,7 +58,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.BulletType, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Bullet Type</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.BulletType, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.BulletType, "", new { @class = "text-danger" })
@@ -58,7 +68,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.BulletWeight, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Bullet Weight (Grains)</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.BulletWeight, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.BulletWeight, "", new { @class = "text-danger" })
@@ -66,7 +78,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Powder, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Powder</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Powder, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Powder, "", new { @class = "text-danger" })
@@ -74,7 +88,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.PowderWeight, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Powder Weight (Grains)</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.PowderWeight, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.PowderWeight, "", new { @class = "text-danger" })
@@ -82,7 +98,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.PowderLot, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Powder Lot</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.PowderLot, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.PowderLot, "", new { @class = "text-danger" })
@@ -90,7 +108,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.PrimerBrand, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Primer Brand</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.PrimerBrand, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.PrimerBrand, "", new { @class = "text-danger" })
@@ -98,7 +118,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.PrimerType, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Primer Type</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.PrimerType, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.PrimerType, "", new { @class = "text-danger" })
@@ -106,7 +128,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.PrimerLot, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Primer Lot</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.PrimerLot, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.PrimerLot, "", new { @class = "text-danger" })
@@ -114,7 +138,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.COL, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>COL</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.COL, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.COL, "", new { @class = "text-danger" })
@@ -122,7 +148,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Speed, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Speed (FPS)</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Speed, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Speed, "", new { @class = "text-danger" })
@@ -130,7 +158,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Notes, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="control-label col-md-2">
+                <b>Notes</b>
+            </div>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Notes, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Notes, "", new { @class = "text-danger" })
