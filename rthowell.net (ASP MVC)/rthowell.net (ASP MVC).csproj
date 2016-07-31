@@ -17,8 +17,8 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -265,6 +265,10 @@
     <Content Include="img\jquery\ui-icons_f5e175_256x240.png" />
     <Content Include="img\jquery\ui-icons_f7a50d_256x240.png" />
     <Content Include="img\jquery\ui-icons_fcd113_256x240.png" />
+    <Content Include="img\ledger\147RNBerrys.jpg" />
+    <Content Include="img\ledger\223Rem-FMJBT.jpg" />
+    <Content Include="img\ledger\350RSBerrys.jpg" />
+    <Content Include="img\ledger\500FP-FTX.jpg" />
     <Content Include="img\nav\contact.png" />
     <Content Include="img\nav\experience.png" />
     <Content Include="img\nav\hobbies.png" />
@@ -344,7 +348,9 @@
     <Content Include="Views\ReloadingData\Edit.cshtml" />
     <Content Include="Views\ReloadingData\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Account\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

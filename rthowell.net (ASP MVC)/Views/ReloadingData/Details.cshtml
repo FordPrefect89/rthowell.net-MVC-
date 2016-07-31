@@ -6,132 +6,159 @@
 }
 
 <h2>Details</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>ReloadingData</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Cartridge)
+                </dt>
 
-<div>
-    <h4>ReloadingData</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Cartridge)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Cartridge)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Cartridge)
-        </dd>
+                <dt>
+                    Date Loaded
+                </dt>
 
-        <dt>
-            Date Loaded
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.DateLoaded)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.DateLoaded)
-        </dd>
+                <dt>
+                    Load Source
+                </dt>
 
-        <dt>
-            Load Source
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.LoadSource)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.LoadSource)
-        </dd>
+                <dt>
+                    Bullet Brand
+                </dt>
 
-        <dt>
-            Bullet Brand
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.BulletBrand)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.BulletBrand)
-        </dd>
+                <dt>
+                    Bullet Type
+                </dt>
 
-        <dt>
-            Bullet Type
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.BulletType)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.BulletType)
-        </dd>
+                <dt>
+                    Bullet Weight
+                </dt>
 
-        <dt>
-            Bullet Weight
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.BulletWeight) grains
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.BulletWeight) grains
-        </dd>
+                <dt>
+                    Powder
+                </dt>
 
-        <dt>
-            Powder
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Powder)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Powder)
-        </dd>
+                <dt>
+                    Powder Weight
+                </dt>
 
-        <dt>
-            Powder Weight
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.PowderWeight) grains
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.PowderWeight) grains
-        </dd>
+                <dt>
+                    Powder Lot
+                </dt>
 
-        <dt>
-            Powder Lot
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.PowderLot)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.PowderLot)
-        </dd>
+                <dt>
+                    Primer Brand
+                </dt>
 
-        <dt>
-            Primer Brand
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.PrimerBrand)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.PrimerBrand)
-        </dd>
+                <dt>
+                    Primer Type
+                </dt>
 
-        <dt>
-            Primer Type
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.PrimerType)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.PrimerType)
-        </dd>
+                <dt>
+                    Primer Lot
+                </dt>
 
-        <dt>
-            Primer Lot
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.PrimerLot)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.PrimerLot)
-        </dd>
+                <dt>
+                    COL
+                </dt>
 
-        <dt>
-            COL
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.COL)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.COL)
-        </dd>
+                <dt>
+                    FPS (Average)
+                </dt>
 
-        <dt>
-            FPS (Average)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Speed) FPS
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Speed) FPS
-        </dd>
+                <dt>
+                    Notes
+                </dt>
 
-        <dt>
-            Notes
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Notes)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Notes)
-        </dd>
+            </dl>
+        </div>
+        <div class="col-md-6">
+            <!--
+                This logic needs to be moved into it's own class and out of the HTML file.
+                Also this needs to be improved to the point where it is easy to handle the multiple
+                different types of bullets/mfg/weights without needing to add more 'if' logic to this.
+            -->
+            @if (Model.Cartridge == "500 S&W" && Model.BulletBrand.Contains("Berry") && Model.BulletWeight == 350)
+            {
+                <img src="~/img/ledger/350RSBerrys.jpg" height="400" width="600" alt="Image of bullet and loaded round" />
+            }
+            else if (Model.Cartridge == "500 S&W" && Model.BulletBrand.Contains("Hornady") && Model.BulletWeight == 500)
+            {
+                <img src="~/img/ledger/500FP-FTX.jpg" height="400" width="600" alt="Image of bullet and loaded round" />
+            }
+            else if (Model.Cartridge == "9mm Luger" && Model.BulletBrand.Contains("Berry") && Model.BulletWeight == 147)
+            {
+                <img src="~/img/ledger/147RNBerrys.jpg" height="400" width="600" alt="Image of bullet and loaded round" />
+            }
+            else if (Model.Cartridge == ".223 Remington" && Model.BulletType == "FMJ-BT")
+            {
+                <img src="~/img/ledger/223Rem-FMJBT.jpg" height="400" width="600" alt="Image of bullet and loaded round" />
+            }
 
-    </dl>
+        </div>
+    </div>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
