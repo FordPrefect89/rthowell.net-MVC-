@@ -8,12 +8,14 @@
         <div class="quickpagenav">
             <ul class="navText">
                 <p style="margin-top:2px; margin-bottom:4px; text-align:center;">Quick Links</p>
-                <li class="liNav"><a href="work/resume.aspx">Resume</a></li>
-                <li class="liNav"><a href="work/electronics.aspx">Electronics Experience</a></li>
-                <li class="liNav"><a href="work/software.aspx">Software Experience</a></li>
+                <li class="liNav">@Html.ActionLink("My Resume", "../Home/Resume")</a></li>
+                <!--
+                <li class="liNav">@Html.ActionLink("Electronics", "../Home/Electronics")</li>
+                <li class="liNav">@Html.ActionLink("Software", "../Home/Software")</li>
+                -->
                 <!--<li class="liNav"><a href="hobbies/hobbies.aspx">Hobbies</a></li>-->
-                <li class="liNav"><a href="hobbies/photography.aspx">Photography</a></li>
-                <li class="liNav"><a href="hobbies/games.aspx">Games</a></li>
+                <li class="liNav">@Html.ActionLink("Photography", "../Hobbies/Photography")</li>
+                <li class="liNav">@Html.ActionLink("Games", "../Hobbies/Games")</li>
                 <!--<li class="liNav"><a href="hobbies/firearms.aspx">Shooting</a></li>-->
             </ul>
         </div>
