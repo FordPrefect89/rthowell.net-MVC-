@@ -6,12 +6,12 @@ using System.Web;
 
 namespace rthowell.net__ASP_MVC_.Models
 {
-    public class PrimerManufacturers
+    public class BrassInfo
     {
         [Key]
-        public int PrimerId { get; set; }
+        public int BrassId { get; set; }
 
-        public string MfgName { get; set; }
-        public string Type { get; set; }
+        public string BrassMfg { get; set; }
+        public float BrassWeight { get; set; }
     }
 }

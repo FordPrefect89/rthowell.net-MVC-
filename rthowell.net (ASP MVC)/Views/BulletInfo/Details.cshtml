@@ -1,0 +1,51 @@
+﻿@model rthowell.net__ASP_MVC_.Models.BulletInfo
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Individual Bullet Information</h2>
+
+<div>
+    <h4><br></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Bullet Manufacturer
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mfg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Caliber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Caliber)
+        </dd>
+
+        <dt>
+            Weight (Grains)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Weight) grains
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BulletId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
