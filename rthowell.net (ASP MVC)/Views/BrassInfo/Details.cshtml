@@ -1,0 +1,59 @@
+﻿@model rthowell.net__ASP_MVC_.Models.BrassInfo
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BrassInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Caliber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Caliber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrassMfg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrassMfg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrassWeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrassWeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrassLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrassLength)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BrassId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

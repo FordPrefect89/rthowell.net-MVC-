@@ -1,0 +1,40 @@
+﻿@model IEnumerable<rthowell.net__ASP_MVC_.Models.PowderManufacturers>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Powder Manufacturer Name
+        </th>
+        <th>
+            Product Name
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PowderMfg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PowderName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PowderId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PowderId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PowderId })
+        </td>
+    </tr>
+}
+
+</table>

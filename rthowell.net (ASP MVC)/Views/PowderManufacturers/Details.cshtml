@@ -1,0 +1,35 @@
+﻿@model rthowell.net__ASP_MVC_.Models.PowderManufacturers
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Individual Powder Information Record</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Powder Manfacturer
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PowderMfg)
+        </dd>
+
+        <dt>
+            Powder Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PowderName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PowderId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

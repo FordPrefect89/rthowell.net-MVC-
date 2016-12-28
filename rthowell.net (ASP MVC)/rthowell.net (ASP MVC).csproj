@@ -180,9 +180,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BrassInfoController.cs" />
     <Compile Include="Controllers\BulletInfoController.cs" />
     <Compile Include="Controllers\HobbiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PowderManufacturersController.cs" />
+    <Compile Include="Controllers\PrimerManufacturersController.cs" />
     <Compile Include="Controllers\ReloadingController.cs" />
     <Compile Include="Controllers\ReloadingDataController.cs" />
     <Compile Include="Global.asax.cs">
@@ -369,6 +372,21 @@
     <Content Include="Views\BulletInfo\Details.cshtml" />
     <Content Include="Views\BulletInfo\Edit.cshtml" />
     <Content Include="Views\BulletInfo\Index.cshtml" />
+    <Content Include="Views\BrassInfo\Create.cshtml" />
+    <Content Include="Views\BrassInfo\Delete.cshtml" />
+    <Content Include="Views\BrassInfo\Details.cshtml" />
+    <Content Include="Views\BrassInfo\Edit.cshtml" />
+    <Content Include="Views\BrassInfo\Index.cshtml" />
+    <Content Include="Views\PrimerManufacturers\Create.cshtml" />
+    <Content Include="Views\PrimerManufacturers\Delete.cshtml" />
+    <Content Include="Views\PrimerManufacturers\Details.cshtml" />
+    <Content Include="Views\PrimerManufacturers\Edit.cshtml" />
+    <Content Include="Views\PrimerManufacturers\Index.cshtml" />
+    <Content Include="Views\PowderManufacturers\Create.cshtml" />
+    <Content Include="Views\PowderManufacturers\Delete.cshtml" />
+    <Content Include="Views\PowderManufacturers\Details.cshtml" />
+    <Content Include="Views\PowderManufacturers\Edit.cshtml" />
+    <Content Include="Views\PowderManufacturers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Account\" />

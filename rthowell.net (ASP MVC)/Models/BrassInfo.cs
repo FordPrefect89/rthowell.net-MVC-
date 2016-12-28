@@ -10,8 +10,12 @@ namespace rthowell.net__ASP_MVC_.Models
     {
         [Key]
         public int BrassId { get; set; }
+        [Required]
+        public string Caliber { get; set; }
 
         public string BrassMfg { get; set; }
-        public float BrassWeight { get; set; }
+        public float? BrassWeight { get; set; }
+        public int? Quantity { get; set; }
+        public float? BrassLength { get; set; }
     }
 }
