@@ -1,0 +1,123 @@
+﻿@model rthowell.net__ASP_MVC_.Models.ExpandedLedger
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ExpandedLedger</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CartrageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CartrageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BulletId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BulletId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrassId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrassId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PowderId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PowderId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PowderWt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PowderWt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PowderLot)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PowderLot)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrimerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimerLot)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrimerLot)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AvgFPS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AvgFPS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeltaMin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeltaMin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeltaMax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeltaMax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LedgerId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -182,12 +182,14 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\BrassInfoController.cs" />
     <Compile Include="Controllers\BulletInfoController.cs" />
+    <Compile Include="Controllers\ExpandedLedgerController.cs" />
     <Compile Include="Controllers\HobbiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PowderManufacturersController.cs" />
     <Compile Include="Controllers\PrimerManufacturersController.cs" />
     <Compile Include="Controllers\ReloadingController.cs" />
     <Compile Include="Controllers\ReloadingDataController.cs" />
+    <Compile Include="Controllers\WorkjQueryDemosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -200,7 +202,10 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Ledger.cs" />
     <Compile Include="Models\LedgerDBContext.cs" />
+    <Compile Include="Models\LorenAutoRifle.cs" />
+    <Compile Include="Models\LorenBoltRifle.cs" />
     <Compile Include="Models\LorenDBContext.cs" />
+    <Compile Include="Models\LorenPistol.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PowderManufacturers.cs" />
     <Compile Include="Models\PrimerManufacturers.cs" />
@@ -387,6 +392,12 @@
     <Content Include="Views\PowderManufacturers\Details.cshtml" />
     <Content Include="Views\PowderManufacturers\Edit.cshtml" />
     <Content Include="Views\PowderManufacturers\Index.cshtml" />
+    <Content Include="Views\ExpandedLedger\Create.cshtml" />
+    <Content Include="Views\ExpandedLedger\Delete.cshtml" />
+    <Content Include="Views\ExpandedLedger\Details.cshtml" />
+    <Content Include="Views\ExpandedLedger\Edit.cshtml" />
+    <Content Include="Views\ExpandedLedger\Index.cshtml" />
+    <Content Include="Views\WorkjQueryDemos\LRUStatus.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Account\" />

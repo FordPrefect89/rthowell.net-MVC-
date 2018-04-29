@@ -10,14 +10,18 @@ namespace rthowell.net__ASP_MVC_.Models
     {
         [Key]
         public int LedgerId { get; set; }
-        //public string CartrageName { get; set; }
-        //public virtual int BulletId { get; set; }
-        //public virtual int BrassId { get; set; }
-        //public virtual int PowderId { get; set; }
-        //public float PowderWt { get; set; }
-        //public string PowderLot { get; set; }
-        //public virtual int PrimerId { get; set; }
-        //public string PrimerLot { get; set; }
-        //public string Notes { get; set; }
+        public string CartrageName { get; set; }
+        public virtual int BulletId { get; set; }
+        public virtual int BrassId { get; set; }
+        public virtual int PowderId { get; set; }
+        public float PowderWt { get; set; }
+        public string PowderLot { get; set; }
+        public virtual int PrimerId { get; set; }
+        public string PrimerLot { get; set; }
+        public float COAL { get; set; }
+        public float? AvgFPS { get; set; }
+        public float? DeltaMin { get; set; }
+        public float? DeltaMax { get; set; }
+        public string Notes { get; set; }
     }
 }

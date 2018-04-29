@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "LRU Status";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"><button type="button" data-toggle="collapse" data-target="#CombinerData" class="btn btn-primary">Combiners</button></div>
+        <div class="col-md-4"><button type="button" data-toggle="collapse" data-target="#ComputerData" class="btn btn-primary">Computers</button></div>
+        <div class="col-md-4"><button type="button" data-toggle="collapse" data-target="#OverheadData" class="btn btn-primary">Overheads</button></div>
+    </div>
+    <div class="row">
+        <div class="col=md-12 collapse" id="CombinerData">
+            This is where a data grid will be for the Combiner LRU locations/status
+        </div>
+        <div class="col=md-12 collapse" id="ComputerData">
+            This is where a data grid will be for the Computer LRU locations/status
+        </div>
+        <div class="col=md-12 collapse" id="OverheadData">
+            This is where a data grid will be for the Overhead LRU locations/status
+        </div>
+    </div>
+</div>
+
+

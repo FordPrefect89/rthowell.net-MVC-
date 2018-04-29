@@ -1,0 +1,106 @@
+﻿@model IEnumerable<rthowell.net__ASP_MVC_.Models.ExpandedLedger>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CartrageName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BulletId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrassId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PowderId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PowderWt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PowderLot)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrimerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrimerLot)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COAL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AvgFPS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeltaMin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeltaMax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CartrageName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BulletId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrassId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PowderId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PowderWt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PowderLot)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrimerId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrimerLot)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COAL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AvgFPS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DeltaMin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DeltaMax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Notes)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LedgerId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LedgerId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LedgerId })
+        </td>
+    </tr>
+}
+
+</table>
